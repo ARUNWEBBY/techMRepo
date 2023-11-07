@@ -1,0 +1,16 @@
+@font-face {
+    font-family: Futura;
+    src: url('.../FuturaStdRegular.woff') format("WOFF");
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: Futura;
+    src: url('.../FuturaStdLight.woff') format("WOFF");
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: Futura;
+    src: url('.../FuturaStdBoldItalic.woff') format("WOFF");
+    font-weight: 700;
+    font-style: italic;
+  }

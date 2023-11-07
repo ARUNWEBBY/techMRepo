@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="/User/assets/css/payment.css">
+</head>
+<body>
+    <div class="model">
+        <div class="model-cancel">
+            <a class="alink" href="/user/src/mybookings.html">
+                X
+            </a>
+        </div>
+      <div class="room">
+        <div class="text-cover">
+          <h1>Burmie's Hall</h1>
+          <p class="price"> 1200.00 <span>Rs</span> /Hr</p>
+          <hr>
+          <p>200 guest</p>
+          <p>Tues, Oct 29, 2023 to Friday, Oct 30, 2023</p>
+        </div>
+      </div><div class="payment">
+        <div class="receipt-box">
+          <h3>Reciept Summary</h3>
+          <table class="table">
+            <tr>
+              <td>1200 x 24 Hrs</td>
+              <td>28000 Rs</td>
+            </tr>
+            <tr>
+              <td>Discount</td>
+              <td>0 Rs</td>
+            </tr>
+            <tr>
+              <td>Subtotal</td>
+              <td>28000 Rs</td>
+            </tr>
+            <tr>
+              <td>GST</td>
+              <td>100 Rs</td>
+            </tr>
+            <tfoot>
+              <tr>
+                <td>Sum</td>
+                <td>29000 Rs</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <div class="payment-info">
+          <h3>Payment Info</h3>
+          <form >
+          <label>Name on Credit Card</label>
+          <input type="text" name="firstname" value="Arun">
+          <label>Credit Card Number</label>
+          <input type="text" name="lastname" value="********7894">
+        <div class="flex-side">
+            <div>
+             <label>CVC</label>
+            <input type="text" name="lastname" value="***">
+            </div>
+            <div>
+            <label>Experies On</label>
+            <input type="text" name="lastname" value="03-5-2024">
+            </div>
+            
+        </div>
+
+
+
+          <br><br>
+          <input class="btn" type="submit" value="Book Securly">
+        </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/user/payment.js"></script>
+</html>

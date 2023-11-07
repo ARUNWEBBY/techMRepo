@@ -1,0 +1,500 @@
+@import "utility";
+@import "mediaQueries";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik+Mono+One&display=swap");
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  color: whitesmoke;
+  padding: 2em;
+
+  &__nav {
+    @include flexcenter(row);
+
+    .hamburger-svg {
+      width: 80px;
+      height: 30px;
+      // display: none;
+    }
+
+    &-menu-ul {
+      @include flexcenter(row);
+      gap: 1rem;
+      display: none;
+      &-li {
+        @include liststyle;
+        &-a {
+          @include alink;
+          @include flexcenter(row);
+          color: whitesmoke;
+        }
+        &-a:hover {
+          border-bottom: 2px solid whitesmoke;
+        }
+      }
+    }
+  }
+}
+
+.login {
+  @include flexcenter(row);
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 2px solid whitesmoke;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+
+.login a {
+  color: black;
+  @include alink();
+}
+@media (min-width: 1532px) {
+  .header__nav-menu-ul {
+    display: flex;
+  }
+  .hamburger-svg {
+    display: none;
+  }
+}
+
+.hero {
+  width: 100vw;
+  height:100vh ;
+  background-color: rgb(0, 0, 0);
+// padding-top: 100px;
+  .hero__bg {
+    width: 100%;
+    height: 70%;
+    position: relative;
+  }
+  .hero__bg-inside {
+    width: 100%;
+    height: 100%;
+    background-image: url(/User/public/stage_decoration-services.jpg);
+    background-size: cover;
+    // background-position: center center;
+   
+  }
+  .hero__search {
+    @include CenterElement();
+    width: 200px;
+    background: rgb(255, 255, 255);
+    @include flexcenter(column);
+    gap: 2em;
+    border-radius: 10px;
+  }
+
+  .hero__block-input {
+    border: 0;
+    color: black;
+    background: transparent;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(96, 95, 95);
+  }
+
+  .hero__btn {
+    border: 0;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    color: whitesmoke;
+    background-color: rgb(0, 0, 0);
+    @include flexcenter(row);
+    justify-content: center;
+    gap: 3em;
+  }
+
+  @media (min-width: 768px) {
+    .hero__search {
+      @include CenterElement();
+      width: 450px;
+      background: rgba(255, 255, 255, 0.8);
+      @include flexcenter(column);
+      gap: 2em;
+      border-radius: 10px;
+    }
+
+    .hero__block-input {
+      border: 0;
+      color: black;
+      background: transparent;
+      font-size: 26px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgb(101, 101, 101);
+    }
+    .hero__block-title {
+      font-size: 28px;
+    }
+    .hero__btn {
+      width: 300px;
+      height: 55px;
+      color: whitesmoke;
+      background-color: rgb(0, 0, 0);
+      @include flexcenter(row);
+      justify-content: center;
+      gap: 3em;
+      font-size: 22px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .hero__search {
+      height: 80px;
+      width: auto;
+      padding: 2rem;
+      background: rgb(255, 255, 255);
+      @include flexcenter(row);
+      gap: 2em;
+      border-radius: 16px;
+      position: absolute;
+      top: 300px;
+    }
+    .hero__block-content {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .hero__block-input {
+      border: 0;
+      color: black;
+      background: transparent;
+      font-size: 18px;
+    }
+    .hero__block-title {
+      font-size: 16px;
+    }
+    .hero__btn {
+      width: 120px;
+      height: 40px;
+      padding: 0.5rem 1.5rem;
+      color: whitesmoke;
+      background-color: rgb(0, 0, 0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1em;
+      font-size: 18px;
+    }
+    .hero__titiles {
+      position: absolute;
+      bottom: -140px;
+      left: 60px;
+      color: whitesmoke;
+      font-size: 50px;
+    }
+  }
+}
+
+.brand {
+  // background-color: aqua;
+  margin-bottom: 20px;
+
+  &__container {
+    width: 100%;
+    height: 150px;
+    @include flexcenter(row);
+    justify-content: space-around;
+  }
+
+  &__block {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .brand-img {
+    filter: grayscale(100%);
+  }
+}
+
+.experience {
+  padding: 90px 140px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .exp__mission {
+    font-size: 16px;
+    color: rgb(128, 128, 128);
+  }
+  .exp__main__para {
+    font-size: 44px;
+    font-weight: 600;
+    text-align: justify;
+  }
+
+  .experience__para {
+    font-size: 18px;
+    line-height: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+  }
+  &__container {
+    margin-top: 1rem;
+    width: 100%;
+    height: 150px;
+    // background-color: antiquewhite;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 10rem;
+  }
+  &__block {
+    @include flexcenter(column);
+    justify-content: start;
+    align-items: start;
+    border-radius: 18px;
+  }
+  .experience-count {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    font-weight: normal;
+  }
+  .experience-content {
+    font-size: 18px;
+    color: rgb(105, 105, 105);
+  }
+}
+
+.why {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: fit-content;
+  padding: 90px 140px;
+  // background-color: red;
+
+  .why__content {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    .why__title1 {
+      padding-left: 120px;
+      font-size: 160px;
+      font-weight: 400;
+      letter-spacing: -4.8px;
+      line-height: 160px;
+      text-align: left;
+    }
+    .why__title2 {
+      font-size: 160px;
+      font-weight: 400;
+      letter-spacing: -4.8px;
+      line-height: 160px;
+      text-align: left;
+      padding-left: 240px;
+    }
+  }
+  .why__flex {
+    margin-top: -62px;
+    padding-left: 40px;
+    display: flex;
+    height: 500px;
+    gap: 1em;
+    // background-color: blue;
+
+    .why__flex-left {
+      width: 50%;
+      padding-left: 80px;
+      height: 100%;
+      // background-color: aqua;
+
+      .why__img {
+        width: 80%;
+        height: 100%;
+        margin: 0px 20px 0px 20px;
+        background-color: black;
+
+        .why__img-inside {
+          width: 100%;
+          height: 100%;
+          background-image: url(/User/public/couple-dancing-ther-wedding.jpg);
+          background-size: cover;
+          background-position: center center;
+        }
+      }
+    }
+
+    .why__flex-right {
+      width: 50%;
+      height: 100%;
+      padding-left: 50px;
+      // background-color: red;
+      display: flex;
+      align-items: flex-end;
+      .why__flex-h1 {
+        font-size: 24px;
+      }
+      .why__flex-right-content {
+        width: 500px;
+      }
+      .why__flex-h1 {
+        font-size: 40px;
+        margin-bottom: 40px;
+      }
+      .why__flex-para {
+        font-size: 20px;
+        margin-bottom: 32px;
+      }
+      .why__flex-arrow {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .why__flex-change {
+        display: flex;
+        gap: 3em;
+        margin-bottom: 2em;
+      }
+    }
+  }
+}
+
+.moment {
+  background-color: black;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh;
+  padding: 90px 140px;
+  // background-color: aqua;
+  @include flexcenter(row);
+  justify-content: space-between;
+
+  &__left {
+    width: 45%;
+    height: 100%;
+    // background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .moment__left-title {
+      font-size: 58px;
+      margin-bottom: 0.5rem;
+    }
+    &-subtitle {
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+  &__right {
+    width: 45%;
+    height: 100%;
+    background-color: rgb(155, 118, 118);
+  }
+
+  .moment__span {
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 16px;
+    margin-right: 24px;
+  }
+  .moment__right-img {
+    width: 100%;
+    height: 100%;
+    background-image: url(/user/public/gallery2.avif);
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+.footer {
+  position: absolute;
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0);
+  width: 100%;
+  height: 200px;
+  padding: 2em;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+}
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.newsletter__title {
+  text-align: start;
+  font-size: 20px;
+}
+.newsletter__bar {
+  padding: 1.5em;
+  font-size: 14px;
+  width: 350px;
+  height: 30px;
+  border-radius: 10px;
+}
+.footer__input {
+  display: flex;
+  gap: 1rem;
+}
+.Subscribe {
+  border: 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(245, 97, 245, 0.729);
+  padding: 1.4rem;
+  font-size: 14px;
+  width: 150px;
+  height: 30px;
+}
+.foooter__aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.footer__share {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__cpy {
+  font-size: normal;
+  font-size: 10px;
+}
+
+.mail {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.mail__name a {
+  @include alink();
+  color: whitesmoke;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  // align-items:center;
+  justify-content: center;
+
+  gap: 0.5rem;
+}
+
+.alink{
+  text-decoration: none;
+}
+

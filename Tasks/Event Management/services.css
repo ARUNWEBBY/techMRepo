@@ -1,0 +1,222 @@
+:root {
+    /* sizes */
+    --size-xxs: 0.5rem;
+    --size-xs: 0.75rem;
+    --size-sm: 0.875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+  }
+
+.main__services{
+    color: whitesmoke;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+.services__titles {
+   margin: 0 auto;
+}
+
+.services__titles h2{
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.main__services-names{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+}
+
+.services__1{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1em;
+}
+.services__2{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1em;
+}
+
+
+/* xs */
+@media (min-width: 375px) {
+    .main__services{
+        display: flex;
+        flex-direction: column;
+    }
+    .Services__round{
+        width:100%;
+        height: 200px;
+         display: flex;
+        justify-content: center;
+        align-items: center;
+      
+    }
+    .Services__round-inside{
+        width:100px;
+        height: 100px;
+       
+    }
+    .services__1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size:var(--size-sm);
+    }
+    .services__2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size:var(--size-sm) ;
+    }
+   
+}
+
+/* sm */
+@media (min-width: 425px) {
+    .main__services{
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .services__1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size:var(--size-sm) ;
+    }
+    .services__2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size:var(--size-sm) ;
+    }
+   
+}
+
+/* md */
+@media (min-width: 768px) {
+ 
+    .main__services-names{
+        width:100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+    .services__1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size:var(--size-base) ;
+        gap:1rem;
+        text-align: center;
+    }
+    .services__2{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        font-size:var(--size-base) ;
+        text-align: center;
+    }
+   
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .services__titles h2{
+        font-size: var(--size-4xl);
+    }
+
+    .services__1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        /* background-color: blue; */
+        font-size:var(--size-base) ;
+        gap:0.5rem;
+        text-align: center;
+    }
+    .services__2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size:var(--size-lg) ;
+        text-align: center;
+        /* padding: var(--size-base); */
+    }
+   
+}
+
+/* xl */
+@media (min-width: 1440px) {
+
+    .services__titles h2{
+        font-size: var(--size-5xl);
+    }
+    .services__1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        /* background-color: blue; */
+        font-size:var(--size-xl) ;
+        gap:0.5rem;
+        text-align: center;
+    }
+    .services__2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size:var(--size-xl) ;
+        text-align: center;
+        /* padding: var(--size-base); */
+    }
+   
+}
+
+/* 2xl */
+ @media (min-width: 1536px) {
+
+    
+    .services__titles h2{
+        font-size: var(--size-5xl);
+    }
+        .services__1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            font-size:var(--size-xl) ;
+            gap:0.5rem;
+            text-align: center;
+        }
+        .services__2{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: end;
+            align-items: center;
+            font-size:var(--size-xl) ;
+            text-align: center;
+        }
+       
+    }

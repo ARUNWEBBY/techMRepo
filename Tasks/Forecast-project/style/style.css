@@ -1,0 +1,91 @@
+:root{
+    --zinc-200:#c7def5;
+    --header:#ebddd3;
+    --row2:#d2dbf8;
+}
+body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+}
+table{
+    /* height: 500px; */
+    width: 500px;
+}
+thead{
+    background-color: var(--header);
+}
+.row-header{
+    padding: 2rem;
+    background-color: var(--header);
+
+}
+
+.row-2{
+    background-color: rgb(241, 213, 213);
+}
+.top-header{
+    padding:2rem;
+    background-color:var(--header);
+
+}
+.side-header{
+    padding: 1rem;
+    background-color: var(--header);
+}
+.Forecast{
+    text-align: center;
+    background-color: var(--zinc-200);
+}
+.Temperature-td{
+    background-color: var(--row2);    
+    text-align: center;
+
+}
+.Overcast-td{
+    padding: 1rem;
+    background-color: var(--zinc-200);
+}
+.Feels_Like-td{
+    background-color: var(--row2);
+    text-align: center;
+
+}
+.Wind_Speed-td{
+    background-color: var(--zinc-200);
+    text-align: center;
+
+}
+.Wind_Direction{
+    background-color: var(--row2);
+    text-align: center;
+
+}
+.Humidity{
+    background-color: var(--zinc-200);
+    text-align: center;
+
+}
+.Dew_Point{
+    background-color: var(--row2);
+    text-align: center;
+
+}
+.Visiblity{
+    background-color: var(--zinc-200);
+    text-align: center;
+
+}
+.pop{
+    text-align: center;
+    background-color: var(--row2);
+}
+.Rain{
+    text-align: center;
+    background-color: var(--zinc-200);
+}
+.pso{
+    text-align: center;
+}

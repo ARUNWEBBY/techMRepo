@@ -1,0 +1,340 @@
+@import url(/font/font.css);
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.linear{
+    width:300px;
+    height:600px;
+    background-image:conic-gradient(from    -45deg at bottom,blue 90deg,gray 0 50%/80px 100%);
+  }
+.header{
+    position: static;
+    bottom:1000px;
+    width: 100%;
+    height:80px;
+
+  }
+
+.header__container{
+   
+    position: fixed;
+    top:0;
+    padding:0 2em;
+    width: 100%;
+    height:80px;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.84);
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.header__logo{
+    fill:wheat;
+}
+
+.header__ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+.header__li{
+    font-size: 14px;
+    letter-spacing: 0.2rem;
+}
+.header__li:hover{
+    border-bottom: 1px solid white;
+}
+
+/* indian container */
+.indian__section{
+   
+    height: 100%;
+}
+.indian__container{
+   
+    height: 100%;
+    display: flex;
+}
+.indian__left{
+   
+    padding-top: 2em;
+    padding-left: 2em;
+    width:45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:2em;
+}
+.indian__right{
+    padding-top: 2em;
+    width:55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:2em;
+}
+
+
+.indian__ltop{
+    margin:0 auto;
+    width:600px;
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.indian__lbottom{
+    margin:0 auto;
+    padding: 0.5rem;
+    width:600px;
+    height:600px;
+     position: relative;
+    box-shadow: 0 0 15px gray;
+    /* background-color: rgb(217, 219, 219); */
+
+}
+
+.clipboard1{
+    right:20px;
+    top:6px;
+    position: absolute;
+    fill:rgba(128, 128, 128, 0.377);
+}
+.indian__rtop{
+   
+    padding-top: 4.2rem;
+    width:800px;
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+
+.indian__rbottom{
+position: relative;
+    padding:1em;
+    width:800px;
+    height:600px;
+    box-shadow: 0 0 15px gray;
+
+}
+
+.clipboard2{
+    position: absolute;
+    top:6px;
+    right: 20px;
+    fill:rgba(128, 128, 128, 0.377);
+}
+.folder{
+    position: relative;
+    padding-top:0.5rem;
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    gap:0.2rem;
+}
+.indian__sub-block{
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+}
+.indian__profile{
+    width:36px;
+    height: 36px;
+    border-radius: 50%;
+    background-image:url(/public/anime-pro.jpg);
+    background-size: cover;
+    object-fit: cover;
+
+}
+.profile_side{
+    display: flex;
+    flex-direction: column;
+    gap:0.3rem;
+    font-size: 10px;
+}
+.h3{
+    font-size: 22px;
+    letter-spacing: 0.2rem;
+}
+.i-image{
+     z-index: -3;
+    /* border: 2px solid red; */
+    overflow: hidden;
+    border-radius: 20px;
+    width:400px;
+    height:250px;
+    background-color: rgb(250, 247, 247);
+    box-shadow: -2px 2px 8px 1px rgba(128, 128, 128, 0.459);
+}
+.i-inside-img{
+    position: relative;
+    background-size: cover;
+    object-fit: cover;
+}
+.img-svg{
+    position: absolute;
+    top:121px;
+    right:15px;
+    fill:rgba(218, 211, 211, 0.341);
+}
+.img-svg:hover{
+    fill:rgb(228, 86, 86);
+}
+.inside-bottom{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+} 
+.inside-bottom h4{
+    margin-top: 0.4rem;
+    margin-bottom: 0.2rem;
+    font-size: 14px;
+}
+
+.indian__timings{
+    width:100%;
+    height: 140px;
+    /* background-color: rgb(214, 236, 244); */
+    box-shadow: inset -2px -2px 8px 1px gray;
+}
+.indian__vid{
+    width:100%;
+}
+.indian__timings{
+    padding: 2em;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.timings__line{
+    border: 0.5px solid;
+    height: 30px;
+    box-shadow:  1px -1px 2px  gray;
+}
+.timings__container{
+    display: flex;
+    gap:0.5rem;
+    flex-direction: column;
+}
+.yt{
+    width: 100%;
+}
+.ingedraint{
+    padding-left: 1rem;
+    font-size: 22px;
+}
+.ingedraint_ul{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.ingedraint_li{
+    font-size: 20px;
+    list-style: none;
+}
+
+.ingedraint_li:hover{
+
+    .pepper{
+        transform :scale(1);
+    
+    }
+}
+.method__title{
+    font-size: 22px;
+    padding-left: 1em;
+}
+.method__ul{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+
+}
+.method__li{
+    padding-left: 20px;
+    list-style: none;
+}
+.method__li p{
+    margin-top: 6px;
+    font-size: 20px;
+}
+.features{
+    margin-top: 2em;
+    margin-left:3rem ;
+    margin-right: 3rem;
+    height:300px;
+}
+.featured__title{
+    font-size: 18px;
+}
+.f-title{
+    font-size: 15px;
+}
+.features{
+    margin-left: 6rem;
+}
+.featured__container{
+    display: flex;
+    gap:3em;
+    margin-top: 1em;
+   
+    overflow-x: scroll;
+}
+.feature__block{
+   
+    display: flex;
+    gap:0.5rem;
+    flex-direction: column;
+
+}
+
+.f-img-contain{
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 1px rgb(128, 126, 126);
+    display: flex;
+    flex-direction: column;
+    width:300px;
+    height: 180px;
+    /* background-color: rgb(127, 255, 138); */
+}
+.f-img{
+    height: 100px;
+}
+.f-inside-img{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    /* background-size: cover; */
+    object-fit: cover;
+}
+.f__img-bottom{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    text-align: center;
+    height: 190px;
+    /* background-color: red; */
+
+}
+.f-h4{
+    text-align: center;
+    font-size: 16px;
+}
+.f-h3{
+    text-align: center;
+    font-size: 14px;
+}

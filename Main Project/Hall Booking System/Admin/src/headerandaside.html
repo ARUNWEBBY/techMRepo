@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hall</title>
+    <link rel="stylesheet" href="assests/css/hall.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+          <h3>[HALLMIZE]</h3>
+        </div>
+        <div class="header__search">
+          <div class="header__search-inside">
+            <div class="header__search-svg">
+              <svg
+                class="header__svg"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="header__options">
+          <div class="language">
+            <svg
+              class="header__svg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-globe"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"
+              />
+            </svg>
+          </div>
+          <div class="moon">
+            <svg
+              class="header__svg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-moon"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"
+              />
+            </svg>
+          </div>
+          <div class="bell">
+            <svg
+              class="header__svg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-bell"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"
+              />
+            </svg>
+          </div>
+          <div class="header__profile">
+            <div class="header__admin-profile"></div>
+          </div>
+        </div>
+      </header>
+
+
+      <main class="main">
+        <div class="main__aside">
+          <div class="aside__top">
+            <!-- dashboard -->
+            <a class="alink-aside" href="">
+              <div class="main__aside-page">
+                <div class="aside-svg">
+                  <svg 
+                    fill="white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 32 40"
+                    x="0px"
+                    y="0px"
+                  >
+                    <g>
+                      <rect x="4" y="16" width="10" height="10" rx="3" ry="3" />
+                      <rect x="16" y="4" width="10" height="10" rx="3" ry="3" />
+                      <rect x="4" y="4" width="10" height="10" rx="3" ry="3" />
+                      <path
+                        d="M25,20H22V17a1,1,0,0,0-2,0v3H17a1,1,0,0,0,0,2h3v3a1,1,0,0,0,2,0V22h3a1,1,0,0,0,0-2Z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <div>
+                  <p>Dashboard</p>
+                </div>
+              </div>
+            </a>
+           <!-- hall -->
+            <a class="alink-aside" href="hall.html">
+              <div class="main__aside-page">
+                <div class="aside-svg">
+                  <svg
+                    fill="white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 64 80"
+                    style="enable-background: new 0 0 64 64"
+                    xml:space="preserve"
+                  >
+                    <path
+                      d="M49.44,53.87l-6.66-4.14l6.86-4.26l6.93,4.3L49.44,53.87z M40.71,58.88l-6.32-3.93l5.88-3.65l6.56,4.07L40.71,58.88z   M17.18,55.38l6.42-3.99l5.74,3.57l-6.2,3.85L17.18,55.38z M7.42,49.78l6.79-4.22l6.86,4.26l-6.52,4.05L7.42,49.78z M32,34.51  l6.86,4.26L32,43.03l-6.86-4.26L32,34.51z M47.13,43.91l-6.86,4.26l-5.74-3.57l6.86-4.26L47.13,43.91z M22.62,40.34l6.86,4.26  l-5.88,3.65l-6.86-4.26L22.62,40.34z M26.12,49.82L32,46.17l5.74,3.57l-5.88,3.65L26.12,49.82z M57.84,47.43L33.33,32.2V0.11  l24.51,14.25V47.43z M6.16,14.36L30.67,0.11V32.2L6.16,47.43V14.36z M32,63.89l-6.23-3.58l6.1-3.79l6.22,3.87L32,63.89z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <p>Hall</p>
+                </div>
+              </div>
+            </a>
+            <!-- Booking -->
+            <a class="alink-aside" href="">
+              <div class="main__aside-page">
+                <div class="aside-svg">
+                  <svg
+                    fill="white"
+                    xmlns:x="http://ns.adobe.com/Extensibility/1.0/"
+                    xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/"
+                    xmlns:graph="http://ns.adobe.com/Graphs/1.0/"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 100 125"
+                    style="enable-background: new 0 0 100 100"
+                    xml:space="preserve"
+                  >
+                    <switch>
+                      <foreignObject
+                        requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/"
+                        x="0"
+                        y="0"
+                        width="1"
+                        height="1"
+                      />
+                      <g i:extraneous="self">
+                        <g>
+                          <path
+                            d="M12,75.1c-2.4,0-4.3-2-4.3-4.3V30.3h69v26.2l4.7,1.3V19.1c0-4.9-4-9-9-9h-8V5.4c0-1.6-1.3-2.9-2.9-2.9h-6.6     c-1.6,0-2.9,1.3-2.9,2.9v4.8H32.4V5.4c0-1.6-1.3-2.9-2.9-2.9h-6.6c-1.6,0-2.9,1.3-2.9,2.9v4.8h-8c-4.9,0-9,4-9,9v51.6     c0,4.9,4,9,9,9h44.6l-1.3-4.7H12z"
+                          />
+                          <path
+                            d="M28.9,40c0-1.3-1.1-2.4-2.4-2.4h-9.3c-1.3,0-2.4,1.1-2.4,2.4v7.4c0,1.3,1.1,2.4,2.4,2.4h9.3c1.3,0,2.4-1.1,2.4-2.4V40z"
+                          />
+                          <path
+                            d="M49.2,40c0-1.3-1.1-2.4-2.4-2.4h-9.3c-1.3,0-2.4,1.1-2.4,2.4v7.4c0,1.3,1.1,2.4,2.4,2.4h9.3c1.3,0,2.4-1.1,2.4-2.4V40z"
+                          />
+                          <path
+                            d="M57.9,37.7c-1.3,0-2.4,1.1-2.4,2.4v7.4c0,1.3,1.1,2.4,2.4,2.4h9.3c1.3,0,2.4-1.1,2.4-2.4V40c0-1.3-1.1-2.4-2.4-2.4H57.9z     "
+                          />
+                          <path
+                            d="M26.5,55.7h-9.3c-1.3,0-2.4,1.1-2.4,2.4v7.4c0,1.3,1.1,2.4,2.4,2.4h9.3c1.3,0,2.4-1.1,2.4-2.4v-7.4     C28.9,56.8,27.8,55.7,26.5,55.7z"
+                          />
+                          <path
+                            d="M46.8,55.7h-9.3c-1.3,0-2.4,1.1-2.4,2.4v7.4c0,1.3,1.1,2.4,2.4,2.4h9.3c1.3,0,2.4-1.1,2.4-2.4v-7.4     C49.2,56.8,48.1,55.7,46.8,55.7z"
+                          />
+                          <path
+                            d="M96.3,86.7L84.2,74.6l8.4-4.9c1.7-1,1.4-3.6-0.5-4.1l-33.5-9.2c-1.7-0.5-3.2,1.1-2.8,2.8L65,92.6     c0.5,1.9,3.1,2.3,4.1,0.5l4.9-8.4l12.1,12.1c0.9,0.9,2.3,0.9,3.2,0l7-7C97.2,89,97.2,87.6,96.3,86.7z"
+                          />
+                        </g>
+                      </g>
+                    </switch>
+                  </svg>
+                </div>
+                <div>
+                  <p>Booking</p>
+                </div>
+              </div>
+            </a>
+            <!-- Payment -->
+            <a class="alink-aside" href="">
+              <div class="main__aside-page">
+                <div class="aside-svg">
+                  <svg
+                    fill="white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 30"
+                    x="0px"
+                    y="0px"
+                  >
+                    <path
+                      d="M19.5,5.74H4.5c-1.38,0-2.5,1.12-2.5,2.5v1.21H22v-1.21c0-1.38-1.12-2.5-2.5-2.5Z"
+                    />
+                    <path
+                      d="M3,11.46h-1v4.3c0,1.38,1.12,2.5,2.5,2.5h15c1.38,0,2.5-1.12,2.5-2.5v-4.3H3Z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <p>Payemnt</p>
+                </div>
+              </div>
+            </a>
+            
+            <!-- User -->
+           <a class="alink-aside" href="">
+            <div class="main__aside-page">
+              <div class="aside-svg">
+                <svg
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 512 640"
+                  enable-background="new 0 0 512 512"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <path
+                      d="M353.3,250.1c-24,26.6-58.7,43.4-97.3,43.4s-73.2-16.8-97.3-43.4c-43.1,30.6-71.5,80.5-71.5,137.2c0,13.8,1.8,28,5.5,42.2   l3.6,14.1h319.2l3.6-14c3.7-14.1,5.5-28.3,5.5-42.2C424.8,330.5,396.3,280.7,353.3,250.1z"
+                    />
+                    <circle cx="256" cy="162.2" r="93.7" />
+                  </g>
+                </svg>
+              </div>
+              <div>
+                <p>User</p>
+              </div>
+            </div>
+           </a>
+           
+           <!-- Reports -->
+           <a href="" class="alink-aside">
+            <div class="main__aside-page">
+              <div class="aside-svg">
+                <svg
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 100 125"
+                  x="0px"
+                  y="0px"
+                >
+                  <g>
+                    <path
+                      d="M78.78,61H67.46a3.71,3.71,0,0,0-3.72,3.72V82.5H82.5V64.72A3.71,3.71,0,0,0,78.78,61Z"
+                    />
+                    <path
+                      d="M55.66,35.75H44.34a3.71,3.71,0,0,0-3.72,3.72v43H59.38v-43A3.71,3.71,0,0,0,55.66,35.75Z"
+                    />
+                    <path
+                      d="M32.54,17.5H21.22a3.71,3.71,0,0,0-3.72,3.72V82.5H36.26V21.22A3.71,3.71,0,0,0,32.54,17.5Z"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div>
+                <p>Reports</p>
+              </div>
+            </div>
+           </a>
+          </div>
+  
+          <div class="aside__bottom">
+            <div class="main__aside-page">
+              <div class="aside-svg">
+                <svg
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 40"
+                  x="0px"
+                  y="0px"
+                >
+                  <g data-name="Layer 2">
+                    <path
+                      d="M23.483,8.74a1.93,1.93,0,0,0-2.648,2.809l2.379,2.244H11.934a1.93,1.93,0,0,0,0,3.859h11.28L20.835,19.9a1.93,1.93,0,0,0,2.65,2.807L29.4,17.123a1.933,1.933,0,0,0,0-2.805Z"
+                    />
+                    <path
+                      d="M14.557,25.879H5.844V5.566h8.713a1.929,1.929,0,1,0,0-3.858H3.914a1.932,1.932,0,0,0-1.93,1.93v24.17a1.932,1.932,0,0,0,1.93,1.929H14.557a1.929,1.929,0,1,0,0-3.858Z"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div>
+                <p>Logout</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main__content">
+        </div>
+      </main>
+</body>
+</html>
+
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">NO</th>
+      <th scope="col">Hall Name</th>
+      <th scope="col">Capacity</th>
+      <th scope="col">Status</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Burmie Hall</td>
+      <td>200</td>
+      <td>Active</td>
+      <td>
+        <button type="button" class="btn btn-primary"><i class="far fa-eye"></i></button>
+        <button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+      <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Bootstrap Grid 4 Tutorial and Examples</td>
+      <td>Cristina</td>
+      <td>3.417</td>
+      <td>
+        <button type="button" class="btn btn-primary"><i class="far fa-eye"></i></button>
+        <button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+      <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Bootstrap Flexbox Tutorial and Examples</td>
+      <td>Cristina</td>
+      <td>1.234</td>
+      <td>
+        <button type="button" class="btn btn-primary"><i class="far fa-eye"></i></button>
+        <button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+      <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
+      </td>
+    </tr>
+  </tbody>
+</table>

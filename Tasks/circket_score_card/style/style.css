@@ -1,0 +1,109 @@
+body{
+    font-family: sans-serif;
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+   
+}
+table,th,tr,td{
+    padding: 0.5rem;
+}
+/* colgroup{
+    background-color: aqua;
+} */
+table{
+    text-align: center;
+    /* border: 1px solid; */
+    table-layout: auto;
+    width: 910px;
+
+    border-collapse: collapse;
+}
+tr{
+    border-bottom: 1px solid gray;
+}
+.header-1{
+    background-color: rgb(69, 69, 85);
+    color: whitesmoke;
+
+}
+.header-1-1th{
+    text-align: start;
+}
+.header-1-2th{
+    text-align: end;
+}
+
+.header-2{
+    background-color: rgb(252, 231, 252);
+    font-size: 16px;
+    font-weight: 600;
+}
+.left-align{
+    text-align: start;
+
+}
+em{
+    font-style: normal;
+    color:blue;
+    line-height: 1.5rem;
+}
+.light-color{
+    color: rgb(103, 91, 91);
+    text-align: start;
+}
+.text-align-c{
+    text-align: start;
+}
+
+.white-space{
+    white-space: nowrap;
+}
+.text-align-e{
+    text-align: end;
+}
+.text-align-s{
+    text-align: center;
+}
+
+
+
+
+/* .col1{
+    background-color: rgb(194, 209, 59);
+}
+.col2{
+    background-color: rgb(114, 85, 100);
+}
+.col3{
+    background-color: rgb(236, 46, 198);
+}
+.col4{
+    background-color: rgb(24, 210, 164);
+}
+.col4{
+    background-color: rgb(58, 175, 226);
+}
+.col6{
+    background-color: rgb(83, 16, 154);
+}
+.col7{
+    background-color: rgba(250, 235, 215, 0.756);
+}
+.col8{
+    background-color: rgba(250, 235, 215, 0.285);
+}
+.col9{
+    background-color: rgb(232, 145, 31);
+}
+.col10{
+    background-color: rgb(112, 109, 106);
+}
+.col11{
+    background-color: rgb(60, 224, 71);
+}
+.col12{
+    background-color: rgb(235, 38, 16);
+} */

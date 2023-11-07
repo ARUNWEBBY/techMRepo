@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px 10px rgba(0, 0, 0, 0.05);
+}
+
+.para {
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 67%;
+  left: 570px;
+  color: rgb(78, 194, 24);
+  font-size: 35px;
+  font-style: bold;
+  width: max-content;
+  opacity: 0;
+  animation: para 2s forwards;
+}
+
+.para-1 {
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 80%;
+  left: 730px;
+  color: rgb(78, 194, 24);
+  font-size: 25px;
+  font-style: bold;
+  width: max-content;
+  opacity: 0;
+  animation: para 2s forwards;
+}
+
+@keyframes para {
+  to {
+    opacity: 1;
+  }
+}
+.circle,
+.circle-border {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+.circle {
+  z-index: 1;
+  position: relative;
+  background: rgb(0, 0, 0);
+  transform: scale(1);
+  animation: success-anim 700ms ease;
+}
+
+.circle-border {
+  z-index: 0;
+  position: absolute;
+  background: rgb(78, 194, 24);
+  transform: scale(1.1);
+  animation: circle-anim 400ms ease;
+}
+
+@keyframes success-anim {
+  0% {
+    transform: scale(0);
+  }
+  30% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes circle-anim {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+.success::before,
+.success::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: rgb(78, 194, 24);
+  position: absolute;
+}
+
+.success::before {
+  width: 30px;
+  height: 6px;
+  top: 58%;
+  left: 33%;
+  transform: rotateZ(40deg);
+}
+
+.success::after {
+  width: 60px;
+  height: 6px;
+  top: 50%;
+  left: 40%;
+  transform: rotateZ(-50deg);
+}
+
+.success-btn {
+  color: white;
+}
+
+.alink {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+/*# sourceMappingURL=success.css.map */

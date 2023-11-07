@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hall</title>
+    <link rel="stylesheet" href="/assets/css/booking.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <h3>[HALLMIZE]</h3>
+      </div>
+      <div class="header__search">
+        <input class="header__search-inside" type="search" name="" id="" />
+        <div class="header__search-svg">
+          <svg
+            class="header__svg-search"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="bi bi-search"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="header__options">
+        <div class="language">
+          <svg
+            class="header__svg"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            x="0px"
+            y="0px"
+            viewBox="0 0 48 60"
+            enable-background="new 0 0 48 48"
+            xml:space="preserve"
+          >
+            <g>
+              <path
+                d="M13.984,10.001h9.004V0.145C19.288,0.729,16.044,4.482,13.984,10.001z"
+              />
+              <path
+                d="M22.988,22.96V12.082h-9.7c-0.961,3.23-1.545,6.931-1.633,10.878H22.988z"
+              />
+              <path
+                d="M25.012,0.145v9.857h9.004C31.955,4.482,28.713,0.729,25.012,0.145z"
+              />
+              <path
+                d="M9.632,25.04H0C0.161,29,1.232,32.722,3.005,35.989c0.107-0.039,0.219-0.07,0.34-0.07h7.822   C10.257,32.652,9.714,28.972,9.632,25.04z"
+              />
+              <path
+                d="M38.367,25.04c-0.082,3.932-0.624,7.612-1.534,10.879h7.821c0.121,0,0.233,0.031,0.34,0.07   C46.768,32.722,47.84,29,48,25.04H38.367z"
+              />
+              <path
+                d="M22.988,25.04H11.656c0.087,3.947,0.672,7.648,1.633,10.879h9.7V25.04z"
+              />
+              <path
+                d="M9.632,22.96c0.082-3.932,0.625-7.612,1.535-10.878H3.345c-0.121,0-0.233-0.031-0.34-0.071C1.232,15.279,0.161,19,0,22.96   H9.632z"
+              />
+              <path
+                d="M36.344,22.96c-0.087-3.948-0.672-7.648-1.633-10.878h-9.699V22.96H36.344z"
+              />
+              <path
+                d="M11.815,10.001C13.357,5.555,15.623,2.05,18.34,0C12.522,1.45,7.527,5.08,4.221,10.001H11.815z"
+              />
+              <path
+                d="M11.815,37.999H4.221C7.527,42.92,12.522,46.55,18.34,48C15.623,45.95,13.357,42.445,11.815,37.999z"
+              />
+              <path
+                d="M36.185,10.001h7.595C40.473,5.08,35.478,1.45,29.66,0C32.377,2.05,34.643,5.555,36.185,10.001z"
+              />
+              <path
+                d="M36.185,37.999C34.643,42.445,32.377,45.95,29.66,48c5.817-1.45,10.813-5.08,14.119-10.001H36.185z"
+              />
+              <path
+                d="M44.654,12.082h-7.821c0.91,3.266,1.452,6.947,1.534,10.878H48c-0.16-3.96-1.232-7.681-3.006-10.949   C44.888,12.05,44.775,12.082,44.654,12.082z"
+              />
+              <path
+                d="M34.016,37.999h-9.004v9.856C28.713,47.271,31.955,43.519,34.016,37.999z"
+              />
+              <path
+                d="M25.012,25.04v10.879h9.699c0.961-3.23,1.546-6.932,1.633-10.879H25.012z"
+              />
+              <path
+                d="M22.988,47.855v-9.856h-9.004C16.044,43.519,19.288,47.271,22.988,47.855z"
+              />
+            </g>
+          </svg>
+        </div>
+        <div class="moon">
+          <svg
+            class="header__svg"
+            fill="black"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            x="0px"
+            y="0px"
+            viewBox="0 0 100 125"
+            style="enable-background: new 0 0 100 100"
+            xml:space="preserve"
+          >
+            <path
+              d="M87.01,62.67c-14.18,6.42-31.1,3.37-42.08-7.61c-10.98-10.98-14.03-27.9-7.59-42.06c0.36-0.81,0.19-1.76-0.45-2.37  c-0.61-0.64-1.57-0.81-2.37-0.45c-4.64,2.1-8.78,4.96-12.27,8.48C14.35,26.55,10,37.05,10,48.22c0,11.15,4.35,21.64,12.25,29.55  C30.14,85.65,40.63,90,51.8,90c11.15,0,21.64-4.35,29.55-12.23c3.5-3.52,6.36-7.65,8.46-12.3c0.36-0.81,0.19-1.74-0.42-2.37  C88.75,62.48,87.82,62.29,87.01,62.67z"
+            />
+          </svg>
+        </div>
+        <div class="bell">
+          <a class="alink" href="booking.html">
+            <svg
+              class="header__svg"
+              xmlns:x="http://ns.adobe.com/Extensibility/1.0/"
+              xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/"
+              xmlns:graph="http://ns.adobe.com/Graphs/1.0/"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 100 125"
+              style="enable-background: new 0 0 100 100"
+              xml:space="preserve"
+            >
+              <switch>
+                <foreignObject
+                  requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/"
+                  x="0"
+                  y="0"
+                  width="1"
+                  height="1"
+                />
+                <g i:extraneous="self">
+                  <g>
+                    <path
+                      d="M61.4,19.7c0-2.4,0.4-4.6,1.1-6.7H24.8C12.5,13,2.5,23,2.5,35.3v21.6c0,12.3,10,22.4,22.3,22.4h3.3l-2.6,10.6     c-0.9,3.7,3.2,6.6,6.4,4.5l23.8-15.1h12.4c12.3,0,22.3-10,22.3-22.4V39.7c-2.4,0.9-4.9,1.4-7.6,1.4C71,41.1,61.4,31.5,61.4,19.7z     "
+                    />
+                    <circle cx="82.8" cy="19.7" r="14.7" />
+                  </g>
+                </g>
+              </switch>
+            </svg>
+          </a>
+        </div>
+        <div class="header__profile">
+          <div class="header__admin-profile"></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__aside">
+        <div class="aside__top">
+          <!-- dashboard -->
+          <a class="alink-aside" href="Index.html">
+            <div class="main__aside-page">
+              <div class="aside-svg">
+                <svg
+                  class="aside-svg"
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 40"
+                  x="0px"
+                  y="0px"
+                >
+                  <g>
+                    <rect x="4" y="16" width="10" height="10" rx="3" ry="3" />
+                    <rect x="16" y="4" width="10" height="10" rx="3" ry="3" />
+                    <rect x="4" y="4" width="10" height="10" rx="3" ry="3" />
+                    <path
+                      d="M25,20H22V17a1,1,0,0,0-2,0v3H17a1,1,0,0,0,0,2h3v3a1,1,0,0,0,2,0V22h3a1,1,0,0,0,0-2Z"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div>
+                <p>Dashboard</p>
+              </div>
+            </div>
+          </a>
+          <!-- hall -->
+          <a class="alink-aside" href="hall.html">
+            <div class="main__aside-page">
+              <div class="aside-svg">
+                <svg
+                  class="aside-svg"
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 64 80"
+                  style="enable-background: new 0 0 64 64"
+                  xml:space="preserve"
+                >
+                  <path
+                    d="M49.44,53.87l-6.66-4.14l6.86-4.26l6.93,4.3L49.44,53.87z M40.71,58.88l-6.32-3.93l5.88-3.65l6.56,4.07L40.71,58.88z   M17.18,55.38l6.42-3.99l5.74,3.57l-6.2,3.85L17.18,55.38z M7.42,49.78l6.79-4.22l6.86,4.26l-6.52,4.05L7.42,49.78z M32,34.51  l6.86,4.26L32,43.03l-6.86-4.26L32,34.51z M47.13,43.91l-6.86,4.26l-5.74-3.57l6.86-4.26L47.13,43.91z M22.62,40.34l6.86,4.26  l-5.88,3.65l-6.86-4.26L22.62,40.34z M26.12,49.82L32,46.17l5.74,3.57l-5.88,3.65L26.12,49.82z M57.84,47.43L33.33,32.2V0.11  l24.51,14.25V47.43z M6.16,14.36L30.67,0.11V32.2L6.16,47.43V14.36z M32,63.89l-6.23-3.58l6.1-3.79l6.22,3.87L32,63.89z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <p>Hall</p>
+              </div>
+            </div>
+          </a>
+          <!-- Booking -->
+          <a class="alink-aside" href="booking.html">
+            <div class="main__aside-page">
+              <div class="aside-svg">
+                <svg
+                  class="aside-svg"
+                  fill="white"
+                  xmlns:x="http://ns.adobe.com/Extensibility/1.0/"
+                  xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/"
+                  xmlns:graph="http://ns.adobe.com/Graphs/1.0/"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 100 125"
+                  style="enable-background: new 0 0 100 100"
+                  xml:space="preserve"
+                >
+                  <switch>
+                    <foreignObject
+                      requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/"
+                      x="0"
+                      y="0"
+                      width="1"
+                      height="1"
+                    />
+                    <g i:extraneous="self">
+                      <g>
+                        <path
+                          d="M12,75.1c-2.4,0-4.3-2-4.3-4.3V30.3h69v26.2l4.7,1.3V19.1c0-4.9-4-9-9-9h-8V5.4c0-1.6-1.3-2.9-2.9-2.9h-6.6     c-1.6,0-2.9,1.3-2.9,2.9v4.8H32.4V5.4c0-1.6-1.3-2.9-2.9-2.9h-6.6c-1.6,0-2.9,1.3-2.9,2.9v4.8h-8c-4.9,0-9,4-9,9v51.6     c0,4.9,4,9,9,9h44.6l-1.3-4.7H12z"
+                        />
+                        <path
+                          d="M28.9,40c0-1.3-1.1-2.4-2.4-2.4h-9.3c-1.3,0-2.4,1.1-2.4,2.4v7.4c0,1.3,1.1,2.4,2.4,2.4h9.3c1.3,0,2.4-1.1,2.4-2.4V40z"
+                        />
+                        <path
+                          d="M49.2,40c0-1.3-1.1-2.4-2.4-2.4h-9.3c-1.3,0-2.4,1.1-2.4,2.4v7.4c0,1.3,1.1,2.4,2.4,2.4h9.3c1.3,0,2.4-1.1,2.4-2.4V40z"
+                        />
+                        <path
+                          d="M57.9,37.7c-1.3,0-2.4,1.1-2.4,2.4v7.4c0,1.3,1.1,2.4,2.4,2.4h9.3c1.3,0,2.4-1.1,2.4-2.4V40c0-1.3-1.1-2.4-2.4-2.4H57.9z     "
+                        />
+                        <path
+                          d="M26.5,55.7h-9.3c-1.3,0-2.4,1.1-2.4,2.4v7.4c0,1.3,1.1,2.4,2.4,2.4h9.3c1.3,0,2.4-1.1,2.4-2.4v-7.4     C28.9,56.8,27.8,55.7,26.5,55.7z"
+                        />
+                        <path
+                          d="M46.8,55.7h-9.3c-1.3,0-2.4,1.1-2.4,2.4v7.4c0,1.3,1.1,2.4,2.4,2.4h9.3c1.3,0,2.4-1.1,2.4-2.4v-7.4     C49.2,56.8,48.1,55.7,46.8,55.7z"
+                        />
+                        <path
+                          d="M96.3,86.7L84.2,74.6l8.4-4.9c1.7-1,1.4-3.6-0.5-4.1l-33.5-9.2c-1.7-0.5-3.2,1.1-2.8,2.8L65,92.6     c0.5,1.9,3.1,2.3,4.1,0.5l4.9-8.4l12.1,12.1c0.9,0.9,2.3,0.9,3.2,0l7-7C97.2,89,97.2,87.6,96.3,86.7z"
+                        />
+                      </g>
+                    </g>
+                  </switch>
+                </svg>
+              </div>
+              <div>
+                <p>Booking</p>
+              </div>
+            </div>
+          </a>
+          <!-- Payment -->
+          <a class="alink-aside" href="payment.html">
+            <div class="main__aside-page">
+              <div class="aside-svg">
+                <svg
+                  class="aside-svg"
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 30"
+                  x="0px"
+                  y="0px"
+                >
+                  <path
+                    d="M19.5,5.74H4.5c-1.38,0-2.5,1.12-2.5,2.5v1.21H22v-1.21c0-1.38-1.12-2.5-2.5-2.5Z"
+                  />
+                  <path
+                    d="M3,11.46h-1v4.3c0,1.38,1.12,2.5,2.5,2.5h15c1.38,0,2.5-1.12,2.5-2.5v-4.3H3Z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <p>Payement</p>
+              </div>
+            </div>
+          </a>
+
+          <!-- User -->
+          <a class="alink-aside" href="user.html">
+            <div class="main__aside-page">
+              <div class="aside-svg">
+                <svg
+                  class="aside-svg"
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 512 640"
+                  enable-background="new 0 0 512 512"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <path
+                      d="M353.3,250.1c-24,26.6-58.7,43.4-97.3,43.4s-73.2-16.8-97.3-43.4c-43.1,30.6-71.5,80.5-71.5,137.2c0,13.8,1.8,28,5.5,42.2   l3.6,14.1h319.2l3.6-14c3.7-14.1,5.5-28.3,5.5-42.2C424.8,330.5,396.3,280.7,353.3,250.1z"
+                    />
+                    <circle cx="256" cy="162.2" r="93.7" />
+                  </g>
+                </svg>
+              </div>
+              <div>
+                <p>User</p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Reports -->
+          <a href="report.html" class="alink-aside">
+            <div class="main__aside-page">
+              <div class="aside-svg">
+                <svg
+                  class="aside-svg"
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 100 125"
+                  x="0px"
+                  y="0px"
+                >
+                  <g>
+                    <path
+                      d="M78.78,61H67.46a3.71,3.71,0,0,0-3.72,3.72V82.5H82.5V64.72A3.71,3.71,0,0,0,78.78,61Z"
+                    />
+                    <path
+                      d="M55.66,35.75H44.34a3.71,3.71,0,0,0-3.72,3.72v43H59.38v-43A3.71,3.71,0,0,0,55.66,35.75Z"
+                    />
+                    <path
+                      d="M32.54,17.5H21.22a3.71,3.71,0,0,0-3.72,3.72V82.5H36.26V21.22A3.71,3.71,0,0,0,32.54,17.5Z"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div>
+                <p>Reports</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="aside__bottom">
+          <div class="main__aside-page">
+            <div class="aside-svg">
+              <svg
+                fill="white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 40"
+                x="0px"
+                y="0px"
+              >
+                <g data-name="Layer 2">
+                  <path
+                    d="M23.483,8.74a1.93,1.93,0,0,0-2.648,2.809l2.379,2.244H11.934a1.93,1.93,0,0,0,0,3.859h11.28L20.835,19.9a1.93,1.93,0,0,0,2.65,2.807L29.4,17.123a1.933,1.933,0,0,0,0-2.805Z"
+                  />
+                  <path
+                    d="M14.557,25.879H5.844V5.566h8.713a1.929,1.929,0,1,0,0-3.858H3.914a1.932,1.932,0,0,0-1.93,1.93v24.17a1.932,1.932,0,0,0,1.93,1.929H14.557a1.929,1.929,0,1,0,0-3.858Z"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div>
+              <p>Logout</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main__content">
+        <h2 class="first__heading">Booking Management</h2>
+        <div class="hall__top">
+          <div class="hall__top-options">
+            <div>
+              <div>
+                <label for=""><h4>Filter</h4></label>
+              </div>
+              <div>
+                <select class="filter" name="" id="">
+                  <option class="htof-option" value="">All</option>
+                  <option class="htof-option" value="">Approved</option>
+                  <option class="htof-option" value="">Pending</option>
+                  <option class="htof-option" value="">
+                    Modification Requested
+                  </option>
+                  <option class="htof-option" value="">
+                    Modification Rejected
+                  </option>
+                  <option class="htof-option" value="">
+                    Modification Approved
+                  </option>
+                  <option class="htof-option" value="">Cancelled</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <label for=""><h4>From</h4></label>
+              </div>
+              <div>
+                <input class="filter" type="date" />
+              </div>
+            </div>
+            <div>
+              <div>
+                <label for=""><h4>To</h4></label>
+              </div>
+              <div>
+                <input class="filter" type="date" />
+              </div>
+            </div>
+            <div>
+              <a class="alink" href="">
+                <button class="filter-btn">Search</button>
+              </a>
+            </div>
+          </div>
+          <!-- <div class="hall__add">
+            <div class="hall__add-svg">
+              <svg
+                width="28"
+                height="28"
+                fill="whitesmoke"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,6a1,1,0,0,0-1,1v4H7a1,1,0,0,0,0,2h4v4a1,1,0,0,0,2,0V13h4a1,1,0,0,0,0-2H13V7A1,1,0,0,0,12,6Z"
+                />
+              </svg>
+            </div>
+            <a class="alink" href="#addnewhall">
+              <div class="hall__add-title"><p>Add User</p></div>
+            </a>
+          </div> -->
+        </div>
+        <div class="hall__table">
+          <div class="select">
+           <div>
+            <h4>
+              Select all
+            </h4>
+           </div>
+           <div>
+            <input class="select-check" type="checkbox" name="" id="">
+           </div>
+          </div>
+          <table class="table">
+            <thead class="thead">
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Booking ID</th>
+                <th scope="col">Customer Name</th>
+                <th scope="col">Booking Date</th>
+                <th scope="col">Status</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody class="tbody">
+              <tr>
+                <th><input class="select-check" type="checkbox" name="" id="" /></th>
+                <th scope="row">101</th>
+                <td>John Doe</td>
+                <td>2023-10-25</td>
+                <td>Pending</td>
+                <td>
+                  <a class="alink" href="#viewbook">
+                    <button type="button" class="btn btn-primary">
+                      <i class="far fa-eye"></i>
+                    </button>
+                  </a>
+                  <a href="">
+                    <button
+                      title="Delete"
+                      type="button"
+                      class="btn btn-success"
+                    >
+                      <i class="fa fa-trash-alt" aria-hidden="true"></i>
+                    </button>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th><input class="select-check" type="checkbox" name="" id="" /></th>
+                <th scope="row">102</th>
+                <td>Jane Smith</td>
+                <td>2023-10-26</td>
+                <td>Approved</td>
+                <td>
+                  <a class="alink" href="#approvebook">
+                    <button type="button" class="btn btn-primary">
+                      <i class="far fa-eye"></i>
+                    </button>
+                  </a>
+                  <a class="alink" href="#editbook">
+                    <button title="Modify" type="button" class="btn btn-danger">
+                      <i class="fa fa-trash-alt"></i>
+                    </button>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th><input class="select-check" type="checkbox" name="" id="" /></th>
+                <th scope="row">103</th>
+                <td>David</td>
+                <td>2023-10-26</td>
+                <td>Rejected</td>
+                <td>
+                  <a class="alink" href="#approvebook">
+                    <button type="button" class="btn btn-primary">
+                      <i class="far fa-eye"></i>
+                    </button>
+                  </a>
+                  <a class="alink" href="#editbook">
+                    <button title="Modify" type="button" class="btn btn-danger">
+                      <i class="fa fa-trash-alt"></i>
+                    </button>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th><input class="select-check" type="checkbox" name="" id="" /></th>
+                <th scope="row">104</th>
+                <td>Bob Johnson</td>
+                <td>2023-10-27</td>
+                <td>Canceled</td>
+                <td>
+                  <a class="alink" href="#cancelbook">
+                    <button type="button" class="btn btn-primary">
+                      <i class="far fa-eye"></i>
+                    </button>
+                  </a>
+                  <a href="">
+                    <button
+                      title="Delete"
+                      type="button"
+                      class="btn btn-success"
+                    >
+                      <i class="fa fa-trash-alt" aria-hidden="true"></i>
+                    </button>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th><input class="select-check" type="checkbox" name="" id="" /></th>
+                <th scope="row">105</th>
+                <td>Sarah Lee</td>
+                <td>2023-10-28</td>
+                <td>Modification Requested</td>
+                <td>
+                  <a class="alink" href="#modifybook">
+                    <button type="button" class="btn btn-primary">
+                      <i class="far fa-eye"></i>
+                    </button>
+                  </a>
+                  <a href="">
+                    <button
+                      title="Delete"
+                      type="button"
+                      class="btn btn-success"
+                    >
+                      <i class="fa fa-trash-alt" aria-hidden="true"></i>
+                    </button>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th><input class="select-check" type="checkbox" name="" id="" /></th>
+                <th scope="row">106</th>
+                <td>Michael Brown</td>
+                <td>2023-10-29</td>
+                <td>Modification Approved</td>
+                <td>
+                  <a class="alink" href="#modifybook">
+                    <button type="button" class="btn btn-primary">
+                      <i class="far fa-eye"></i>
+                    </button>
+                  </a>
+                  <a href="">
+                    <button
+                      title="Delete"
+                      type="button"
+                      class="btn btn-success"
+                    >
+                      <i class="fa fa-trash-alt" aria-hidden="true"></i>
+                    </button>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th><input class="select-check" type="checkbox" name="" id="" /></th>
+                <th scope="row">107</th>
+                <td>Alice Lee</td>
+                <td>2023-10-30</td>
+                <td>Modification Rejected</td>
+                <td>
+                  <a class="alink" href="#viewbook">
+                    <button type="button" class="btn btn-primary">
+                      <i class="far fa-eye"></i>
+                    </button>
+                  </a>
+                  <a href="">
+                    <button
+                      title="Delete"
+                      type="button"
+                      class="btn btn-success"
+                    >
+                      <i class="fa fa-trash-alt" aria-hidden="true"></i>
+                    </button>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th><input class="select-check" type="checkbox" name="" id="" /></th>
+                <th scope="row">108</th>
+                <td>Robert Das</td>
+                <td>2023-10-31</td>
+                <td>Approved(After Rejected)</td>
+                <td>
+                  <a class="alink" href="#viewbook">
+                    <button type="button" class="btn btn-primary">
+                      <i class="far fa-eye"></i>
+                    </button>
+                  </a>
+                  <a href="">
+                    <button
+                      title="Delete"
+                      type="button"
+                      class="btn btn-success"
+                    >
+                      <i class="fa fa-trash-alt" aria-hidden="true"></i>
+                    </button>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th><input class="select-check" type="checkbox" name="" id="" /></th>
+                <th scope="row">109</th>
+                <td>Arun Das</td>
+                <td>2023-1-3</td>
+                <td>Approved(After Modified)</td>
+                <td>
+                  <a class="alink" href="#viewbook">
+                    <button type="button" class="btn btn-primary">
+                      <i class="far fa-eye"></i>
+                    </button>
+                  </a>
+                  <a href="">
+                    <button
+                      title="Delete"
+                      type="button"
+                      class="btn btn-success"
+                    >
+                      <i class="fa fa-trash-alt" aria-hidden="true"></i>
+                    </button>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="payment__btn-block">
+            <div>
+              <button class="pay-btn send">Approve</button>
+            </div>
+            <div>
+              <button class="pay-btn remove">Reject</button>
+            </div>
+          </div>
+          <div class="user__pages-preview">
+            <div class="user__page-title-show">
+              <p>Showing 1 to 7 of & entries</p>
+            </div>
+            <div class="user__page-number">
+              <a href="">
+                <div class="user__next-page-left-svg">
+                  <svg
+                    class="user__pp-svg-left"
+                    fill="black"
+                    width="24"
+                    height="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 48 60"
+                    x="0px"
+                    y="0px"
+                  >
+                    <g data-name="Chevron Left">
+                      <path
+                        d="M33,44.83,12.17,24,33,3.17,35.83,6l-18,18,18,18Z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </a>
+
+              <div class="user__next-page-btn">
+                <button class="user__np-btn-inside">1</button>
+              </div>
+              <a href="">
+                <div class="user__next-page-right-svg">
+                  <svg
+                    class="user__pp-svg-right"
+                    fill="black"
+                    width="24"
+                    height="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 48 60"
+                    x="0px"
+                    y="0px"
+                  >
+                    <g data-name="Chevron Right">
+                      <path
+                        d="M12.17,42l18-18-18-18L15,3.17,35.83,24,15,44.83Z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- booking details -->
+        <div id="viewbook" class="user__add">
+          <h2>Booking Details</h2>
+          <h3>Reviewing Event on Oct 29th, 2023 (Sunday)</h3>
+          <form class="user__add-form" action="">
+            <div class="user__add-form-block">
+              <div class="user__add-form-part">
+                <!-- booking ID -->
+                <div>
+                  <label class="udf-label" for="">Booking ID</label>
+                </div>
+                <div class="udf-part">
+                  <input class="uaf-input" type="text" placeholder="101" />
+                </div>
+              </div>
+              <div class="user__add-form-part">
+                <div>
+                  <!-- Booking status -->
+                  <label class="udf-label" for="">Booking Status</label>
+                </div>
+                <div class="udf-part">
+                  <input class="uaf-input" type="text" placeholder="Pending" />
+                </div>
+              </div>
+            </div>
+            <div class="user__add-form-block">
+              <!-- User Name -->
+              <div class="user__add-form-part">
+                <div>
+                  <label class="udf-label" for="">Name</label>
+                </div>
+                <div class="udf-part">
+                  <input
+                    class="uaf-input"
+                    type="text"
+                    placeholder="Danny Das"
+                  />
+                </div>
+              </div>
+              <div class="user__add-form-part">
+                <!-- Hall Name -->
+                <div>
+                  <label class="udf-label" for="">Hall Name</label>
+                </div>
+                <div class="udf-part">
+                  <input
+                    class="uaf-input"
+                    type="text"
+                    placeholder="Burmie Hall"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="user__add-form-block">
+              <!-- Date -->
+              <div class="user__add-form-part">
+                <div>
+                  <label class="udf-label" for="">Date</label>
+                </div>
+                <div class="udf-part">
+                  <input
+                    class="uaf-input"
+                    type="text"
+                    placeholder="23-10-2023"
+                  />
+                </div>
+              </div>
+              <div class="user__add-form-part">
+                <div>
+                  <label class="udf-label" for="">Time</label>
+                </div>
+                <div class="udf-part">
+                  <input
+                    class="uaf-input"
+                    type="text"
+                    placeholder="8.00am - 9.00pm"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="user__add-form-block">
+              <!-- email -->
+              <div class="user__add-form-part">
+                <div>
+                  <label class="udf-label" for="">Email</label>
+                </div>
+                <div class="udf-part">
+                  <input
+                    class="uaf-input"
+                    type="text"
+                    placeholder="arun@gmail.com"
+                  />
+                </div>
+              </div>
+              <div class="user__add-form-part">
+                <!-- phn number -->
+                <div>
+                  <label class="udf-label" for="">Phone Number</label>
+                </div>
+                <div class="udf-part">
+                  <input
+                    class="uaf-input"
+                    type="text"
+                    placeholder="7373785898"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="user__add-form-block">
+              <div class="user__add-form-part">
+                <!-- Capacity -->
+                <div>
+                  <label class="udf-label" for="">Capacity</label>
+                </div>
+                <div class="udf-part">
+                  <input class="uaf-input" type="text" placeholder="200" />
+                </div>
+              </div>
+              <div class="user__add-form-part">
+                <!-- price -->
+                <div>
+                  <label class="udf-label" for="">Price</label>
+                </div>
+                <div class="udf-part">
+                  <input class="uaf-input" type="text" placeholder="3000 Rs" />
+                  <div class="file-pdf">
+                    <a class="alink" href="#viewInvoice">
+                      <i class="fa fa-file"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="user__add-form-btn">
+              <!-- reject-btn -->
+              <div class="udf-part-btn">
+                <button class="udf-btn">Reject</button>
+              </div>
+              <!-- approve-Btn -->
+              <div class="udf-part-btn">
+                <button class="udf-btn">Approve</button>
+              </div>
+              <!-- Back-btn -->
+              <div class="udf-part-btn">
+                <button class="udf-btn">Back</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- approved edit -->
+        <div id="approvebook" class="user__add">
+          <h2>Booking Details</h2>
+          <h3>Approved Event on Oct 29th, 2023 (Sunday)</h3>
+          <form class="user__add-form" action="">
+            <div class="user__add-form-block">
+              <div class="user__add-form-part">
+                <!-- booking ID -->
+                <div>
+                  <label class="udf-label" for="">Booking ID</label>
+                </div>
+                <div class="udf-part">
+                  <input class="uaf-input" type="text" placeholder="101" />
+                </div>
+              </div>
+              <div class="user__add-form-part">
+                <div>
+                  <!-- Booking status -->
+                  <label class="udf-label" for="">Booking Status</label>
+                </div>
+                <div class="udf-part">
+                  <input class="uaf-input" type="text" placeholder="Approved" />
+                </div>
+              </div>
+            </div>
+            <div class="user__add-form-block">
+              <!-- User Name -->
+              <div class="user__add-form-part">
+                <div>
+                  <label class="udf-label" for="">Name</label>
+                </div>
+                <div class="udf-part">
+                  <input
+                    class="uaf-input"
+                    type="text"
+                    placeholder="Danny Das"
+                  />
+                </div>
+              </div>
+              <div class="user__add-form-part">
+                <!-- Hall Name -->
+                <div>
+                  <label class="udf-label" for="">Hall Name</label>
+                </div>
+                <div class="udf-part">
+                  <input
+                    class="uaf-input"
+                    type="text"
+                    placeholder="Burmie Hall"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="user__add-form-block">
+              <!-- Date -->
+              <div class="user__add-form-part">
+                <div>
+                  <label class="udf-label" for="">Date</label>
+                </div>
+                <div class="udf-part">
+                  <input
+                    class="uaf-input"
+                    type="text"
+                    placeholder="23-10-2023"
+                  />
+                </div>
+              </div>
+              <div class="user__add-form-part">
+                <div>
+                  <label class="udf-label" for="">Time</label>
+                </div>
+                <div class="udf-part">
+                  <input
+                    class="uaf-input"
+                    type="text"
+                    placeholder="8.00am - 9.00pm"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="user__add-form-block">
+              <!-- email -->
+              <div class="user__add-form-part">
+                <div>
+                  <label class="udf-label" for="">Email</label>
+                </div>
+                <div class="udf-part">
+                  <input
+                    class="uaf-input"
+                    type="text"
+                    placeholder="arun@gmail.com"
+                  />
+                </div>
+              </div>
+              <div class="user__add-form-part">
+                <!-- phn number -->
+                <div>
+                  <label class="udf-label" for="">Phone Number</label>
+                </div>
+                <div class="udf-part">
+                  <input
+                    class="uaf-input"
+                    type="text"
+                    placeholder="7373785898"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="user__add-form-block">
+              <div class="user__add-form-part">
+                <!-- Capacity -->
+                <div>
+                  <label class="udf-label" for="">Capacity</label>
+                </div>
+                <div class="udf-part">
+                  <input class="uaf-input" type="text" placeholder="200" />
+                </div>
+              </div>
+              <div class="user__add-form-part">
+                <!-- price -->
+                <div>
+                  <label class="udf-label" for="">Price</label>
+                </div>
+                <div class="udf-part">
+                  <input class="uaf-input" type="text" placeholder="3000 Rs" />
+                  <div class="file-pdf">
+                    <a class="alink" href="#viewInvoice">
+                      <i class="fa fa-file"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="user__add-form-btn">
+              <!-- reject-btn -->
+              <div class="udf-part-btn">
+                <button class="udf-btn">Delete</button>
+              </div>
+              <!-- approve-Btn -->
+              <div class="udf-part-btn">
+                <button class="udf-btn">Unapprove</button>
+              </div>
+              <!-- Back-btn -->
+              <div class="udf-part-btn">
+                <button class="udf-btn">Back</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- cancelled -->
+        <div id="cancelbook" class="user__add">
+          <h2>Booking Details</h2>
+          <h3>Cancelled Event on Oct 29th, 2023 (Sunday)</h3>
+          <form class="user__add-form" action="">
+            <div class="user__add-form-block">
+              <div class="user__add-form-part">
+                <!-- booking ID -->
+                <div>
+                  <label class="udf-label" for="">Booking ID</label>
+                </div>
+                <div class="udf-part">
+                  <input class="uaf-input" type="text" placeholder="101" />
+                </div>
+              </div>
+              <div class="user__add-form-part">
+                <div>
+                  <!-- Booking status -->
+                  <label class="udf-label" for="">Booking Status</label>
+                </div>
+                <div class="udf-part">
+                  <input class="uaf-input" type="text" placeholder="Cancelled" />
+                </div>
+              </div>
+            </div>
+            <div class="user__add-form-block">
+              <!-- User Name -->
+              <div class="user__add-form-part">
+                <div>
+                  <label class="udf-label" for="">Name</label>
+                </div>
+                <div class="udf-part">
+                  <input
+                    class="uaf-input"
+                    type="text"
+                    placeholder="Danny Das"
+                  />
+                </div>
+              </div>
+              <div class="user__add-form-part">
+                <!-- Hall Name -->
+                <div>
+                  <label class="udf-label" for="">Hall Name</label>
+                </div>
+                <div class="udf-part">
+                  <input
+                    class="uaf-input"
+                    type="text"
+                    placeholder="Burmie Hall"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="user__add-form-block">
+              <!-- Date -->
+              <div class="user__add-form-part">
+                <div>
+                  <label class="udf-label" for="">Cancelled on</label>
+                </div>
+                <div class="udf-part">
+                  <input
+                    class="uaf-input"
+                    type="text"
+                    placeholder="23-10-2023"
+                  />
+                </div>
+              </div>
+              <div class="user__add-form-part">
+                <div>
+                  <label class="udf-label" for="">Time</label>
+                </div>
+                <div class="udf-part">
+                  <input
+                    class="uaf-input"
+                    type="text"
+                    placeholder="8.00am - 9.00pm"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="user__add-form-block">
+              <!-- email -->
+              <div class="user__add-form-part">
+                <div>
+                  <label class="udf-label" for="">Email</label>
+                </div>
+                <div class="udf-part">
+                  <input
+                    class="uaf-input"
+                    type="text"
+                    placeholder="arun@gmail.com"
+                  />
+                </div>
+              </div>
+              <div class="user__add-form-part">
+                <!-- phn number -->
+                <div>
+                  <label class="udf-label" for="">Phone Number</label>
+                </div>
+                <div class="udf-part">
+                  <input
+                    class="uaf-input"
+                    type="text"
+                    placeholder="7373785898"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="user__add-form-block">
+              <div class="user__add-form-part">
+                <!-- Capacity -->
+                <div>
+                  <label class="udf-label" for="">Capacity</label>
+                </div>
+                <div class="udf-part">
+                  <input class="uaf-input" type="text" placeholder="200" />
+                </div>
+              </div>
+              <div class="user__add-form-part">
+                <!-- price -->
+                <div>
+                  <label class="udf-label" for="">Price</label>
+                </div>
+                <div class="udf-part">
+                  <input class="uaf-input" type="text" placeholder="3000 Rs" />
+                  <div class="file-pdf">
+                    <a class="alink" href="#viewInvoice">
+                      <i class="fa fa-file"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="user__add-form-btn">
+              <!-- reject-btn -->
+              <div class="udf-part-btn">
+                <button class="udf-btn">Delete</button>
+              </div>
+              <!-- approve-Btn
+              <div class="udf-part-btn">
+                <button class="udf-btn">Unapprove</button>
+              </div> -->
+              <!-- Back-btn -->
+              <div class="udf-part-btn">
+                <button class="udf-btn">Back</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- Modify booking -->
+        <div id="modifybook" class="user__add">
+          <h2>Modification Requested</h2>
+          <h3>Reviewing Event on Oct 29th, 2023 (Sunday)</h3>
+          <form class="user__add-form" action="">
+            <div class="user__add-form-block">
+              <div class="user__add-form-part">
+                <!-- booking ID -->
+                <div>
+                  <label class="udf-label" for="">Booking ID</label>
+                </div>
+                <div class="udf-part">
+                  <input class="uaf-input" type="text" placeholder="101" />
+                </div>
+              </div>
+              <div class="user__add-form-part">
+                <div>
+                  <!-- Booking status -->
+                  <label class="udf-label" for="">Booking Status</label>
+                </div>
+                <div class="udf-part">
+                  <input class="uaf-input" type="text" placeholder="Pending" />
+                </div>
+              </div>
+            </div>
+            <div class="user__add-form-block">
+              <!-- User Name -->
+              <div class="user__add-form-part">
+                <div>
+                  <label class="udf-label" for="">Name</label>
+                </div>
+                <div class="udf-part">
+                  <input
+                    class="uaf-input"
+                    type="text"
+                    placeholder="Danny Das"
+                  />
+                </div>
+              </div>
+              <div class="user__add-form-part">
+                <!-- Hall Name -->
+                <div>
+                  <label class="udf-label" for="">Hall Name</label>
+                </div>
+                <div class="udf-part">
+                  <p class="udf-para"><del>Burmie Hall</del></p>
+                  <p class="udf-para-modify">Oeesha hall</p>
+                </div>
+              </div>
+            </div>
+            <div class="user__add-form-block">
+              <!-- Date -->
+              <div class="user__add-form-part">
+                <div>
+                  <label class="udf-label" for="">Date</label>
+                </div>
+                <div class="udf-part">
+                  <input
+                    class="uaf-input"
+                    type="text"
+                    placeholder="23-10-2023"
+                  />
+                </div>
+              </div>
+              <div class="user__add-form-part">
+                <div>
+                  <label class="udf-label" for="">Time</label>
+                </div>
+                <div class="udf-part">
+                  <input
+                    class="uaf-input"
+                    type="text"
+                    placeholder="8.00am - 9.00pm"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="user__add-form-block">
+              <!-- email -->
+              <div class="user__add-form-part">
+                <div>
+                  <label class="udf-label" for="">Email</label>
+                </div>
+                <div class="udf-part">
+                  <input
+                    class="uaf-input"
+                    type="text"
+                    placeholder="arun@gmail.com"
+                  />
+                </div>
+              </div>
+              <div class="user__add-form-part">
+                <!-- phn number -->
+                <div>
+                  <label class="udf-label" for="">Phone Number</label>
+                </div>
+                <div class="udf-part">
+                  <input
+                    class="uaf-input"
+                    type="text"
+                    placeholder="7373785898"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="user__add-form-block">
+              <div class="user__add-form-part">
+                <!-- Capacity -->
+                <div>
+                  <label class="udf-label" for="">Capacity</label>
+                </div>
+                <div class="udf-part">
+                  <input class="uaf-input" type="text" placeholder="200" />
+                </div>
+              </div>
+              <div class="user__add-form-part">
+                <!-- price -->
+                <div>
+                  <label class="udf-label" for="">Price</label>
+                </div>
+                <div class="udf-part">
+                  <input class="uaf-input" type="text" placeholder="3000 Rs" />
+                  <div class="file-pdf">
+                    <a class="alink" href="#viewInvoice">
+                      <i class="fa fa-file"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="user__add-form-btn">
+              <!-- reject-btn -->
+              <div class="udf-part-btn">
+                <button class="udf-btn">Unapprove</button>
+              </div>
+              <!-- approve-Btn -->
+              <div class="udf-part-btn">
+                <button class="udf-btn">Approve</button>
+              </div>
+              <!-- Back-btn -->
+              <div class="udf-part-btn">
+                <button class="udf-btn">Back</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div id="viewInvoice" class="invoice">
+          <div class="invoice-header">
+            <div class="invoice-title">Invoice</div>
+            <div class="invoice-details">
+              Invoice Number: INV-2023-101<br />
+              Date: October 23, 2023<br />
+              Due Date: October 27, 2023
+            </div>
+          </div>
+          <table class="invoice-table">
+            <thead>
+              <tr>
+                <th>Description</th>
+                <th>Halls</th>
+                <th>Unit Price</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Hall Booking</td>
+                <td>1</td>
+                <td>$500.00</td>
+                <td>$500.00</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="invoice-total">
+            <table>
+              <tr>
+                <th>Subtotal</th>
+                <td>$500.00</td>
+              </tr>
+              <tr>
+                <th>Processing Fee (5%)</th>
+                <td>$25.00</td>
+              </tr>
+              <tr>
+                <th>Taxes (10%)</th>
+                <td>$52.50</td>
+              </tr>
+              <tr>
+                <th>Total Amount Due</th>
+                <td>$577.50</td>
+              </tr>
+            </table>
+          </div>
+          <div class="invoice-notes">
+            <h4>Payment Instructions:</h4>
+            <p>Payment can be made by Credit Card.</p>
+            <p>
+              Please make your payment by the due date to the following account:
+            </p>
+            <p>Account Name: Hallimize</p>
+            <p>Account Number: 454785859856</p>
+          </div>
+        </div>
+
+        <!-- bboking rules -->
+        <div class="user__add">
+          <h2>Define Booking Rules</h2>
+          <form class="user__add-form"  id="rules-form">
+              <label  class="udf-label">
+                  Minimum Booking Duration (hours):
+                  <input   class="uaf-input" type="number" name="minDuration" placeholder="e.g., 2" required>
+              </label>
+              <label class="udf-label">
+                  Maximum Booking Duration (hours):
+                  <input class="uaf-input" type="number" name="maxDuration" placeholder="e.g., 6" required>
+              </label class="udf-label">
+              <label class="udf-label">
+                  Advance Booking Period (days):
+                  <input class="uaf-input" type="number" name="advanceBooking" placeholder="e.g., 7" required>
+              </label>
+              <label>
+                  Cancellation Policy:
+                  <input  type="radio" name="cancellationPolicy" value="flexible" required> Flexible
+                  <input type="radio" name="cancellationPolicy" value="moderate"> Moderate
+                  <input type="radio" name="cancellationPolicy" value="strict"> Strict
+                  <input type="radio" name="cancellationPolicy" value="super-strict"> Super Strict
+              </label>
+              <button class="udf-btn" type="submit">Save Rules</button>
+          </form>
+        </div>
+      
+      </div>
+    </main>
+  </body>
+</html>

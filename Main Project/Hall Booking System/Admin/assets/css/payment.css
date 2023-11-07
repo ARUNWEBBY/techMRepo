@@ -1,0 +1,505 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+.first__heading {
+  font-size: 28px;
+  padding-left: 4.5rem;
+}
+
+.first__heading-dash {
+  font-size: 28px;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  display: flex;
+  padding: 20px 20px;
+  border-radius: 0px 0px 8px 8px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 6px rgb(87, 87, 87);
+  background-color: rgba(137, 137, 137, 0.159);
+  backdrop-filter: blur(10.5px);
+}
+.header .header__search {
+  position: relative;
+}
+.header .header__search-svg {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+}
+.header .header__svg-search {
+  height: 24px;
+  width: 24px;
+}
+.header .header__search-inside {
+  width: 448px;
+  height: 16px;
+  border: 2px solid rgb(171, 171, 171);
+  border-radius: 34px;
+  padding: 20px 32px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #e5e7eb;
+}
+.header .header__options {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+}
+.header .header__options .header__profile {
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.header .header__options .header__profile .header__admin-profile {
+  width: 100%;
+  height: 100%;
+  background-image: url(/public/Male-admin.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.header .header__svg {
+  width: 28px;
+  height: 28px;
+}
+
+.alink {
+  text-decoration: none;
+  color: #333;
+}
+
+.alink-aside {
+  text-decoration: none;
+  color: #f9f9f9;
+}
+
+.select {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.header__svg {
+  width: 28px;
+  height: 28px;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-top: 80px;
+}
+.main .main__aside {
+  border-radius: 16px;
+  position: fixed;
+  left: 10px;
+  width: 13%;
+  height: 88vh;
+  background: rgb(21, 21, 21);
+  color: #fff;
+  padding: 55px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1.5rem;
+}
+.main .main__aside .main__aside-page {
+  font-size: 18px;
+  line-height: 30px;
+  padding: 8px 24px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.main .main__aside .main__aside-page .aside-svg {
+  width: 24px;
+  height: 24px;
+}
+.main .main__aside .main__aside-page:hover {
+  background-color: rgb(81, 81, 81);
+}
+.main .main__aside .main__aside-page:active {
+  background-color: rgb(81, 81, 81);
+}
+.main .main__content {
+  width: 85%;
+  padding: 20px;
+  margin-left: 228px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.main .main__content .hall__top {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+.main .main__content .hall__top .filter {
+  width: 150px;
+  height: 40px;
+  padding: 8px 8px;
+  border: 2px solid lightgray;
+  border-radius: 8px;
+}
+.main .main__content .hall__top .filter-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  height: 40px;
+  margin-top: 1.5rem;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: rgb(15, 15, 15);
+  color: whitesmoke;
+}
+.main .main__content .hall__top .user__search {
+  position: relative;
+}
+.main .main__content .hall__top .user__search-input {
+  padding: 8px 32px;
+  width: 350px;
+  border-radius: 8px;
+  border: 0;
+  border: 1px solid rgb(186, 186, 186);
+  background-color: rgb(245, 245, 245);
+}
+.main .main__content .hall__top .user__search-svg {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+.main .main__content .hall__top .user__search-svg .user__search-svg-inside {
+  width: 16px;
+  height: 16px;
+}
+.main .main__content .hall__top .filter__user {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 32px;
+  width: 150px;
+  height: 42px;
+  border-radius: 8px;
+  border: 0;
+  border: 1px solid rgb(186, 186, 186);
+  background-color: rgb(0, 0, 0);
+  color: whitesmoke;
+  font-size: 18px;
+  line-height: 28px;
+}
+.main .main__content .hall__top .hall__top-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.main .main__content .hall__top .htof-select {
+  width: 150px;
+  height: 40px;
+  padding: 8px 24px;
+  border: 0;
+  border-bottom: 1px solid lightgray;
+  box-shadow: 0 0 5px lightgray;
+}
+.main .main__content .hall__top .htof-option {
+  width: 100%;
+  border-radius: 0;
+  background-color: rgb(232, 232, 232);
+}
+.main .main__content .hall__top .hall__add {
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background-color: rgb(83, 83, 240);
+}
+.main .main__content .hall__top .hall__add .hall__add-svg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .main__content .hall__top .hall__add .hall__add-title {
+  color: whitesmoke;
+  font-size: 16px;
+}
+.main .main__content .hall__table {
+  width: 80%;
+  height: auto;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.main .main__content .hall__table table,
+.main .main__content .hall__table thead,
+.main .main__content .hall__table tr,
+.main .main__content .hall__table th {
+  padding: 8px 16px;
+  border-collapse: collapse;
+}
+.main .main__content .hall__table table {
+  width: 100%;
+}
+.main .main__content .hall__table thead {
+  background-color: black;
+  color: white;
+}
+.main .main__content .hall__table td {
+  text-align: center;
+}
+.main .main__content .hall__table tr {
+  height: 60px;
+  border-radius: 16px;
+}
+.main .main__content .hall__table tr:nth-child(even) {
+  background-color: rgb(219, 217, 217);
+}
+.main .main__content .user__pages-preview {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .main__content .user__page-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+.main .main__content .user__np-btn-inside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  padding: 8px 8px;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+}
+.main .main__content .user__add {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+.main .main__content .user__add-form {
+  margin-top: 2rem;
+  width: 60%;
+  height: auto;
+  background-color: rgb(238, 238, 238);
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgb(236, 236, 236);
+}
+.main .main__content .user__add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.main .main__content .user__add-form-block {
+  display: flex;
+  width: 100%;
+  gap: 5rem;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgray;
+  position: relative;
+}
+.main .main__content .user__add-form-block:last-child {
+  border-bottom: none;
+}
+.main .main__content .udf-label {
+  color: gray;
+  font-size: 16px;
+}
+.main .main__content .user__add-form-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.main .main__content .uaf-input {
+  background-color: transparent;
+  border: 0;
+  width: max-content;
+  height: 40px;
+  padding: 0;
+}
+.main .main__content .uaf-input:focus {
+  box-shadow: none;
+  outline-style: none;
+}
+.main .main__content .uaf-input::placeholder {
+  font-size: 18px;
+  color: #333;
+}
+.main .main__content .uaf-textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  margin-top: 0.4rem;
+  font-size: 18px;
+  resize: none;
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgray;
+}
+.main .main__content .udf-para-modify {
+  width: max-content;
+  font-size: 18px;
+}
+.main .main__content .udf-para {
+  color: #5b5b5b;
+  width: max-content;
+  font-size: 18px;
+}
+.main .main__content .udf-btn {
+  width: 130px;
+  height: 45px;
+  border-radius: 8px;
+  border: 0;
+  box-shadow: 2px 2px 10px 2px lightgray;
+  padding: 8px 12px;
+  background-color: rgb(66, 66, 66);
+  color: #fff;
+}
+.main .main__content .file-pdf {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  cursor: pointer;
+}
+
+.payment__btn-block {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+.payment__btn-block .pay-btn {
+  width: 100px;
+  height: max-content;
+  padding: 4px 8px;
+  border-radius: 8px;
+  border: 0;
+}
+.payment__btn-block .send {
+  background-color: blue;
+  color: #f9f9f9;
+}
+.payment__btn-block .remove {
+  background-color: rgb(255, 35, 35);
+  color: #f9f9f9;
+}
+
+.invoice {
+  margin-bottom: 4rem;
+  margin-top: 7rem;
+  width: 60%;
+  padding: 20px;
+  background-color: #eaeaea;
+  margin-left: 6rem;
+  border-radius: 8px;
+}
+
+.invoice-header {
+  text-align: center;
+}
+
+.invoice-title {
+  font-size: 24px;
+}
+
+.invoice-details {
+  font-size: 14px;
+}
+
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.invoice-table th,
+.invoice-table td {
+  border: 1px solid #ccc;
+  text-align: left;
+  padding: 8px;
+}
+
+.invoice-total {
+  margin-top: 20px;
+}
+
+.invoice-notes {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=payment.css.map */

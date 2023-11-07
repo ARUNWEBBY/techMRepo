@@ -1,0 +1,456 @@
+@import url(/font/font.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*,::after,::before{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --clr:#E96064;
+
+    --sizes-xxs:  0.5rem ;
+    --sizes-xs:   0.75rem  ;
+    --sizes-sm: 0.875rem ;
+    --sizes-base: 1rem;
+    --sizes-lg:   1.125rem  ;
+    --sizes-xl:   1.25rem  ;
+    --sizes-2xl:  1.5rem  ;
+    --sizes-3xl:  1.875rem  ;
+    --sizes-4xl:  2.25rem ;
+    --sizes-5xl:  3rem  ;
+    --sizes-6xl:  3.75rem  ;
+    --sizes-7xl:  4.5rem  ;
+    --sizes-8xl:  6rem ;
+    --sizes-9xl:  8rem ;
+    --sizes-10xl: 10rem  ;
+}
+
+html{
+    min-height: 100%;
+    min-width: 100%;
+    font-family: 'Montserrat';
+}
+em{
+    color:var(--clr);
+    font-size: 16px;
+}
+
+.header__container{
+    position: relative;
+    width:100%;
+    height: 300px;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    position: absolute;
+    top:0;
+    left:20px;
+}
+.company__name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+}
+.name{
+    font-size: 18px;
+}
+.time{
+font-size: 15px;
+}
+.line{
+border: 1px solid;
+height: 20px;
+}
+.company__role{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 48px;
+    text-align: center;
+}
+.header__share{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+}
+.share{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid ;
+}
+
+
+/* xs */
+@media (max-width: 475px) {
+
+    .logo{
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top:0;
+        left:20px;
+    }
+    .company__name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:0.2rem;
+    }
+    .name{
+        font-size: 10px;
+    }
+    .time{
+    font-size: 10px;
+    }
+    .line{
+    border: 1px solid;
+    height: 10px;
+    }
+    .company__role{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 100;
+        font-size: 18px;
+        text-align: center;
+    }
+    .header__share{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .share{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:35px;
+        height: 35px;
+        border-radius: 50%;
+        border: 1px solid ;
+    }    
+}
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+main{
+    width: 1000px;
+    min-height: 100%;
+    margin: 0 auto;
+}
+.main__container{
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: aqua; */
+}
+.main__folder{
+    display: flex;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 100;
+    color:var(--clr);
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.634);
+}
+.form{
+ margin-top: 2rem;
+ margin-left:168px;
+ margin-right: 168px;
+ padding-bottom: 1em;
+
+}
+.form__title{
+    font-size:18px ;
+    margin-bottom: 0.7rem;
+}
+.form__p{
+    font-size: 16px;
+    margin-bottom: 1.7rem;
+}
+.form__upload-resume{
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    width:400px;
+    height: 100px;
+    background-color: aliceblue;
+    border: 3px dotted lightblue;
+    line-height: 1.5rem;
+
+
+}
+.personal__details{
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+    margin-top: 1.5em;
+    padding-top: 1em;
+    border-top: 1px solid rgba(128, 128, 128, 0.634);
+}
+.personal__title h3,.personal__title a,.form__title,.form__upload-resume a,.upload h2{
+    text-decoration: none;
+    color: var(--clr);
+}
+.pd__container{
+
+    display: flex;
+    gap:4rem;
+}
+.first__name,.last__name,.exp__label{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+.pd__mention{
+    width:100px;
+    height:40px;
+    display: flex;
+   
+}
+.mention{
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    border: 1px solid; 
+}
+
+.mention:hover,.gendre:hover{
+    background-color:var(--clr);
+}
+.on{
+    background-color: var(--clr);
+}
+.fn-input{
+    width:480px;
+    height:40px;
+}
+.ln-input{
+    width:645px;
+    height:40px;
+
+}
+.pd__gendre{
+    display: flex;
+    width:645px;
+    height:40px;  
+}
+.gendre__container{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    width:645px;
+    height:40px; 
+    margin-bottom: 1.5rem;
+  
+}
+.gendre{
+    text-align: center;
+    padding: 0.5em;
+    border: 1px solid;
+   
+}
+.exp__in-years{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.exp__inside{
+    display: flex;
+    width:645px;
+    height:40px; 
+}
+.select__inside{
+    width:645px;
+    height:45px; 
+   
+}
+.option__inside{
+    padding: 1em;
+  border-radius:0;
+  font-size: 18px; 
+}
+
+
+.upload{
+    border-top: 1px solid rgba(128, 128, 128, 0.634);
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+.upload__browser{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    width: 100px;
+    height: 40px;
+    background-color: aliceblue;
+    border: 3px dotted lightblue;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    gap:1rem;
+    padding-bottom: 5rem;
+}
+.cancel{
+    font-size: 18px;
+    width:120px;
+    height: 45px;
+    border:1px solid gray;
+    border-radius: 10px;
+    background-color: white;
+}
+.submit{
+    font-size: 18px;
+    padding: 0.3rem;
+    width:120px;
+    height: 45px;
+    border:1px solid gray;
+    border-radius:6px;
+    background-color:var(--clr);
+}
+footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+}
+.footer1{
+    display: flex;
+    color: var(--clr);
+}
+   
+.arrow-up{
+    position: absolute;
+    right: 14px;
+    bottom: 100px;
+}
+
+.footer1-a{
+    color: var(--clr);
+    padding-left: 0.5rem;
+    text-decoration: none;
+}
+.footer2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer2-in{
+    display: flex;
+    flex-direction: column;
+}
+.power{
+    color:rgba(128, 128, 128, 0.737);
+}
+
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
+
+  
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  .section {
+    margin-top: 5rem;
+  }
+  
+  .loading {
+    filter: blur(40px) grayscale(100%);
+  }
+  
+  .loaded {
+    filter: blur(0) grayscale(0);
+    transition: 0.7s ease-in-out;
+  }
+  
+  /* xs */
+  @media (min-width: 475px) {
+    .container {
+      max-width: 475px;
+    }
+  }
+  
+  /* sm */
+  @media (min-width: 640px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+  
+  /* md */
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+  
+  /* lg */
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px;
+    }
+  
+    .section {
+      margin-top: 10rem;
+    }
+  }
+  
+  /* xl */
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+  
+  /* 2xl */
+  @media (min-width: 1536px) {
+    .container {
+      max-width: 1536px;
+    }
+  }

@@ -1,0 +1,352 @@
+:root {
+  /* sizes */
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
+
+/* xs */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "General Sans", sans-serif;
+  /* border: 2px solid rgb(4, 255, 0); */
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+button {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin: 0 auto;
+}
+
+.section {
+  margin-top: 5rem;
+}
+
+.header {
+  background:linear-gradient(rgb(215, 166, 51),transparent);
+  width: 100vw;
+  height: 100vh;
+}
+
+.header__nav {
+  width: 100%;
+  padding-left: 1em;
+  padding-right: 1em;
+  position: absolute;
+  top: 0;
+  height: 50px;
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-between;
+  align-items: start;
+  color: whitesmoke;
+  // background-color: aqua;
+}
+.header__img {
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+  border-radius: 0 0 20px 20px / 0 0 20px 20px;
+  position: relative;
+  color: red;
+}
+.header__img-inside {
+  width: 100%;
+  height: 100%;
+  background-image: url(/public/wedding-ceremony-with-flowers-large-vase-with-flowers-table_948735-24638.jpg);
+  background-size: cover;
+}
+
+.header__menu ul{
+  display: none;
+  text-decoration: none;
+  list-style: none;
+}
+.header__menu a{
+  text-decoration: none;
+  list-style: none;
+  color: whitesmoke;
+}
+.header__menu a:hover{
+border-bottom: 1px solid;
+}
+.header__menu-svg {
+  // display: none;
+
+}
+.menu-svg{
+  width: 30;
+  height: 30;
+}
+.header__bottom {
+  height: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header__bottom-left {
+  font-size: var(--size-xl);
+}
+.header__bottom-right {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 0.2rem;
+  font-size: var(--size-xs);
+}
+.header__arrow-svg {
+  width: 16px;
+  height: 16px;
+}
+.header__bottom-right a {
+  text-decoration: none;
+  color: black;
+}
+.chat:hover {
+  border-bottom: 1px solid;
+}
+.wwd-title{
+  text-align: center;
+  font-size: var(--size-6xl);
+}
+
+@media (min-width: 375px) {
+  .adventure {
+    font-size: var(--size-xl);
+  }
+  .chat {
+    font-size: var(--size-base);
+  }
+  .header__arrow-svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (min-width: 425px) {
+  .adventure {
+    font-size: var(--size-2xl);
+  }
+  .chat {
+    font-size: var(--size-sm);
+  }
+  .header__arrow-svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+@media (min-width: 768px) {
+  .adventure {
+    // padding-left: 2em;
+    padding-right: 2em;
+    font-size: var(--size-3xl);
+    font-style: bold;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.5em;
+  }
+  .chat {
+    font-size: var(--size-lg);
+  }
+  .header__arrow-svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .adventure {
+    // padding-left: 2em;
+    padding-right: 2em;
+    font-size: var(--size-3xl);
+    font-style: bold;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.5em;
+  }
+  .chat {
+    font-size: var(--size-lg);
+  }
+  .header__arrow-svg {
+    width: 24px;
+    height: 24px;
+  }
+  .header__menu-svg{
+    display: none;
+  }
+  .header__menu ul{
+    display: block;
+    display: flex;
+    gap:0.5em;
+    text-decoration: none;
+    list-style: none;
+  }
+}
+@media (min-width: 1440px) {
+  .adventure {
+    // padding-left: 2em;
+    padding-right: 2em;
+    font-size: var(--size-4xl);
+    font-style: bold;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.5em;
+  }
+  .chat {
+    font-size: var(--size-xl);
+  }
+  .header__arrow-svg {
+    width: 26px;
+    height: 26px;
+  }
+  .header__menu ul{
+    display: block;
+    display: flex;
+    gap:1em;
+    font-size: var(--size-xl);
+  }
+  .events{
+    font-size: var(--size-xl);
+  }
+}
+@media (min-width: 1536px) {
+  .adventure {
+    // padding-left: 2em;
+    padding-right: 2em;
+    font-size: var(--size-5xl);
+    font-style: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.5em;
+  }
+  .chat {
+    font-size: var(--size-2xl);
+  }
+  .header__arrow-svg {
+    width: 26px;
+    height: 26px;
+  }
+  .events{
+    font-size: var(--size-xl);
+  }
+  .header__menu-svg{
+    width: 30;
+    height: 30;
+  }
+  .header__menu ul{
+    padding-top: 1rem;
+    display: block;
+    display: flex;
+    gap:1em;
+    font-size: var(--size-xl);
+  }
+  .events{
+    padding-top: 1rem;
+    font-size: var(--size-xl);
+  }
+  .header__nav{
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
